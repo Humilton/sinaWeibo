@@ -1,6 +1,6 @@
 
 import logging
-from config import LOG_FILE
+from .config import LOG_FILE
 
 logger = logging.getLogger('weibo')
 logger.setLevel(logging.DEBUG)

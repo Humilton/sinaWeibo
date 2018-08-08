@@ -3,10 +3,10 @@
 import time
 import re
 import json
-from weibo.weibo_message import WeiboMessage
-from config import ADD_WATERMARK, WATERMARK_URL, WATERMARK_NIKE
-from config import MAX_IMAGES
-from logger import logger
+from ..weibo.weibo_message import WeiboMessage
+from ..config import ADD_WATERMARK, WATERMARK_URL, WATERMARK_NIKE
+from ..config import MAX_IMAGES
+from ..logger import logger
 
 
 if MAX_IMAGES < 0 or MAX_IMAGES > 9:
@@ -51,7 +51,7 @@ class WeiboSender(object):
             pid = self.upload_image_stream(image)
             if pid:
                 pids += " " + pid
-            time.sleep(10)
+            time.sleep(5)
         return pids.strip()
 
     def upload_image_stream(self, image_url):

@@ -10,7 +10,7 @@ import re
 import sys
 from PIL import Image
 import threading
-from config import USER_AGENT
+from ..config import USER_AGENT
 
 session = requests.session()
 session.headers['User-Agent'] = USER_AGENT

@@ -12,7 +12,7 @@
 ## 使用
 
 1.  根据注释修改配置文件`config.py`。
-2.  运行`main.py`，`python main.py`。
+2.  运行`main.py`，`python weibo.py`。
 
 注意：
 1. 该代码使用了代码依赖[requests](http://docs.python-requests.org/en/master/)、[rsa](https://pypi.python.org/pypi/rsa)、[beautifulsoup4](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)和PIL(使用扫码登录)，没有安装的话需要先安装：
@@ -33,23 +33,9 @@ pip install -r requirements.txt
 
 更多内容请参考：[Python代码登录新浪微博并自动发微博](http://chaolongzhang.github.io/2015/code-login-sina-weibo-update-weibo/ )
 
-## 更新
-
-* 2018-01-06：增加扫码登录功能。
 
 ## License
 
 sinaWeibo is published under GNU GPLv3 License. See the LICENSE file for more.
 
-## 捐赠
-
-如果您觉得该工具对你有帮助，欢迎给我一定的捐赠。
-
-**支付宝扫码捐赠**
-
-![](./doc/donate-alipay.png)
-
-**微信扫码捐赠**
-
-![](./doc/donate-wechatpay.png)
 

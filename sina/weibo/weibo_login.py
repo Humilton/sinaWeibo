@@ -6,9 +6,9 @@ import base64
 import binascii
 import rsa
 import requests
-from config import WBCLIENT, USER_AGENT
-from config import USER_NAME, PASSWD
-from logger import logger
+from ..config import WBCLIENT, USER_AGENT
+from ..config import USER_NAME, PASSWD
+from ..logger import logger
 
 session = requests.session()
 session.headers['User-Agent'] = USER_AGENT
